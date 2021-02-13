@@ -1,5 +1,5 @@
 #!/usr/bin/perl
-
+use lib './local/lib/perl5';
 use CGI::Carp qw(fatalsToBrowser);
 
 use strict;
