@@ -9,19 +9,20 @@
 #
 
 # System config
-#use constant ADMIN_PASS => 'CHANGEME';			# Admin password. For fucks's sake, change this.
-#use constant NUKE_PASS => 'CHANGEME';			# Password to nuke a board. Change this too, NOW!
-#use constant SECRET => 'CHANGEME';				# Cryptographic secret. CHANGE THIS to something totally random, and long.
+# TODO these needs to be set properly
+use constant ADMIN_PASS => 'CHANGEME-livinTheDream34829@%#$';			# Admin password. For fucks's sake, change this.
+use constant NUKE_PASS => 'CHANGEME-livinTheDream34829@%#$';			# Password to nuke a board. Change this too, NOW!
+use constant SECRET => 'CHANGEME-livinTheDream34829@%#$';				# Cryptographic secret. CHANGE THIS to something totally random, and long.
 #use constant SQL_DBI_SOURCE => 'DBI:mysql:database=CHANGEME;host=localhost'; # DBI data source string (mysql version, put server and database name in here)
 #use constant SQL_USERNAME => 'CHANGEME';		# MySQL login name
 #use constant SQL_PASSWORD => 'CHANGEME';		# MySQL password
-##use constant SQL_DBI_SOURCE => 'dbi:SQLite:dbname=wakaba.sql';		# DBI data source string (SQLite version, put database filename in here)
-##use constant SQL_USERNAME => '';				# Not used by SQLite
-##use constant SQL_PASSWORD => '';				# Not used by SQLite
-#use constant SQL_TABLE => 'comments';			# Table (NOT DATABASE) used by image board
-#use constant SQL_ADMIN_TABLE => 'admin';		# Table used for admin information
-#use constant SQL_PROXY_TABLE => 'proxy';		# Table used for proxy information
-#use constant USE_TEMPFILES => 1;				# Set this to 1 under Unix and 0 under Windows! (Use tempfiles when creating pages)
+use constant SQL_DBI_SOURCE => 'dbi:SQLite:dbname=wakaba.sql';		# DBI data source string (SQLite version, put database filename in here)
+use constant SQL_USERNAME => '';				# Not used by SQLite
+use constant SQL_PASSWORD => '';				# Not used by SQLite
+use constant SQL_TABLE => 'comments';			# Table (NOT DATABASE) used by image board
+use constant SQL_ADMIN_TABLE => 'admin';		# Table used for admin information
+use constant SQL_PROXY_TABLE => 'proxy';		# Table used for proxy information
+use constant USE_TEMPFILES => 1;				# Set this to 1 under Unix and 0 under Windows! (Use tempfiles when creating pages)
 
 # Page look
 #use constant TITLE => 'Wakaba image board';	# Name of this image board
