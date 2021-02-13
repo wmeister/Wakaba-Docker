@@ -1,4 +1,5 @@
 #!/usr/bin/perl
+use lib './local/lib/perl5';
 
 use CGI::Carp qw(fatalsToBrowser);
 
@@ -39,7 +40,6 @@ if(CONVERT_CHARSETS)
 #
 # Global init
 #
-
 my $protocol_re=qr/(?:http|https|ftp|mailto|nntp)/;
 
 my $dbh=DBI->connect(SQL_DBI_SOURCE,SQL_USERNAME,SQL_PASSWORD,{AutoCommit=>1}) or make_error(S_SQLCONF);

@@ -1,0 +1,3 @@
+requires 'CGI::Carp', '4.51';
+requires 'DBI', '1.643';
+requires 'DBD::SQLite', '1.66';
