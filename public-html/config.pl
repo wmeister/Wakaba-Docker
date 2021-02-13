@@ -57,15 +57,15 @@ use constant USE_TEMPFILES => 1;				# Set this to 1 under Unix and 0 under Windo
 #use constant MAX_IMAGE_PIXELS => 50000000;		# Maximum width*height of image before rejecting
 
 # Captcha
-#use constant ENABLE_CAPTCHA => 1;
-#use constant SQL_CAPTCHA_TABLE => 'captcha';	# Use a different captcha table for each board, if you have more than one!
-#use constant CAPTCHA_LIFETIME => 1440;			# Captcha lifetime in seconds
-#use constant CAPTCHA_SCRIPT => 'captcha.pl';
-#use constant CAPTCHA_HEIGHT => 18;
-#use constant CAPTCHA_SCRIBBLE => 0.2;
-#use constant CAPTCHA_SCALING => 0.15;
-#use constant CAPTCHA_ROTATION => 0.3;
-#use constant CAPTCHA_SPACING => 2.5;
+use constant ENABLE_CAPTCHA => 1;
+use constant SQL_CAPTCHA_TABLE => 'captcha';	# Use a different captcha table for each board, if you have more than one!
+use constant CAPTCHA_LIFETIME => 1440;			# Captcha lifetime in seconds
+use constant CAPTCHA_SCRIPT => 'captcha.pl';
+use constant CAPTCHA_HEIGHT => 18;
+use constant CAPTCHA_SCRIBBLE => 0.2;
+use constant CAPTCHA_SCALING => 0.15;
+use constant CAPTCHA_ROTATION => 0.3;
+use constant CAPTCHA_SPACING => 2.5;
 
 # Load Balancing
 #use constant ENABLE_LOAD => 0;					# Enable the distribution of image files across multiple hosts (0: no, 1: yes). May not work on a windows host. Do not enable if using STUPID_THUMBNAILING.
