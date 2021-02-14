@@ -1,13 +1,16 @@
 FROM httpd:2.4
+
+RUN apt update
+RUN apt -y upgrade
+RUN apt install -y perl imagemagick carton build-essential wget
 COPY ./public-html/ /usr/local/apache2/htdocs/
 WORKDIR /usr/local/apache2/htdocs
 COPY ./my-httpd.conf /usr/local/apache2/conf/httpd.conf
 RUN rm index.html
-RUN apt update
-RUN apt -y upgrade
-RUN apt install -y perl imagemagick wget carton build-essential
 RUN mkdir res src thumb
-RUN chmod 0777 . res src thumb wakaba.pl captcha.pl
+RUN touch wakaba.sql 
+RUN chmod 0777 . res src thumb wakaba.pl captcha.pl wakaba.sql
 RUN carton install
-RUN perl wakaba.pl
-RUN ln wakaba.html index.html
+WORKDIR /tmp
+RUN /usr/local/apache2/bin/httpd && wget http://localhost/wakaba.pl
+
