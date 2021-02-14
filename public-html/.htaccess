@@ -9,6 +9,10 @@ Deny from all
 Deny from all
 </Files>
 
+<Files cpanfile>
+Deny from all
+</Files>
+
 <IfModule mod_headers.c>
 <Files *.html>
 Header add Expires "Mon, 26 Jul 1997 05:00:00 GMT"
