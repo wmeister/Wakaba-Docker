@@ -10,15 +10,13 @@
 
 # System config
 # TODO these needs to be set properly
-use constant ADMIN_PASS => 'CHANGEME-livinTheDream34829@%#$';			# Admin password. For fucks's sake, change this.
-use constant NUKE_PASS => 'CHANGEME-livinTheDream34829@%#$';			# Password to nuke a board. Change this too, NOW!
-use constant SECRET => 'CHANGEME-livinTheDream34829@%#$';				# Cryptographic secret. CHANGE THIS to something totally random, and long.
-#use constant SQL_DBI_SOURCE => 'DBI:mysql:database=CHANGEME;host=localhost'; # DBI data source string (mysql version, put server and database name in here)
-#use constant SQL_USERNAME => 'CHANGEME';		# MySQL login name
-#use constant SQL_PASSWORD => 'CHANGEME';		# MySQL password
-use constant SQL_DBI_SOURCE => 'dbi:SQLite:dbname=wakaba.sql';		# DBI data source string (SQLite version, put database filename in here)
-use constant SQL_USERNAME => '';				# Not used by SQLite
-use constant SQL_PASSWORD => '';				# Not used by SQLite
+use constant ADMIN_PASS => 'CHANGEME';			# Admin password. For fucks's sake, change this.
+use constant NUKE_PASS => 'CHANGEME';			# Password to nuke a board. Change this too, NOW!
+use constant SECRET => 'CHANGEME';				# Cryptographic secret. CHANGE THIS to something totally random, and long.
+#use constant SQL_DBI_SOURCE => 'DBI:mysql:database=wakaba;host=localhost'; # DBI data source string (mysql version, put server and database name in here)
+use constant SQL_USERNAME => '';		# MySQL login name
+use constant SQL_PASSWORD => '';		# MySQL password
+use constant SQL_DBI_SOURCE => 'dbi:SQLite:dbname=wakaba.sql';		# DBI data source string (SQLite version, put database filename in here)#use constant SQL_USERNAME => '';				# Not used by SQLite
 use constant SQL_TABLE => 'comments';			# Table (NOT DATABASE) used by image board
 use constant SQL_ADMIN_TABLE => 'admin';		# Table used for admin information
 use constant SQL_PROXY_TABLE => 'proxy';		# Table used for proxy information
@@ -57,15 +55,15 @@ use constant USE_TEMPFILES => 1;				# Set this to 1 under Unix and 0 under Windo
 #use constant MAX_IMAGE_PIXELS => 50000000;		# Maximum width*height of image before rejecting
 
 # Captcha
-use constant ENABLE_CAPTCHA => 1;
-use constant SQL_CAPTCHA_TABLE => 'captcha';	# Use a different captcha table for each board, if you have more than one!
-use constant CAPTCHA_LIFETIME => 1440;			# Captcha lifetime in seconds
-use constant CAPTCHA_SCRIPT => 'captcha.pl';
-use constant CAPTCHA_HEIGHT => 18;
-use constant CAPTCHA_SCRIBBLE => 0.2;
-use constant CAPTCHA_SCALING => 0.15;
-use constant CAPTCHA_ROTATION => 0.3;
-use constant CAPTCHA_SPACING => 2.5;
+use constant ENABLE_CAPTCHA => 0;
+#use constant SQL_CAPTCHA_TABLE => 'captcha';	# Use a different captcha table for each board, if you have more than one!
+#use constant CAPTCHA_LIFETIME => 1440;			# Captcha lifetime in seconds
+#use constant CAPTCHA_SCRIPT => 'captcha.pl';
+#use constant CAPTCHA_HEIGHT => 18;
+#use constant CAPTCHA_SCRIBBLE => 0.2;
+#use constant CAPTCHA_SCALING => 0.15;
+#use constant CAPTCHA_ROTATION => 0.3;
+#use constant CAPTCHA_SPACING => 2.5;
 
 # Load Balancing
 #use constant ENABLE_LOAD => 0;					# Enable the distribution of image files across multiple hosts (0: no, 1: yes). May not work on a windows host. Do not enable if using STUPID_THUMBNAILING.
