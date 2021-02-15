@@ -1,5 +1,6 @@
 # Wakaba-Docker
-Wakaba was created by Dag Ågren/WAHa.06x36. Description from the website (http://wakaba.c3.cx/s/web/wakaba_kareha):
+## About
+Wakaba was created by Dag Ågren/WAHa.06x36. Description from the website:
 
 "Wakaba is an image board script very strictly modelled after the Futaba and Futallaby scripts. Wakaba borrows quite a bit of HTML code and translated text from Futallaby.
 
@@ -7,5 +8,8 @@ Wakaba and Kareha are my attempts at implementing from scratch image and message
 
 Docker Hub+Github Repo by William Meister <<to0n@sdf.org>>. As I understand it Wakaba is Public Domain. For more info visit: 
 
+- http://wakaba.c3.cx/s/web/wakaba_kareha
 - https://hub.docker.com/r/dockboygannondorf/wakaba
 - https://github.com/wmeister/Wakaba-Docker
+
+## Usage
